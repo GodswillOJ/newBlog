@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add Blogs</h1>
+        <p>Welcome<b><%= Username %></b></p>
+        <nav style="margin-bottom: 10px;">
+        <a href="/">View Blogs</a>
+        <a href="/logout">Log out</a>
+    </nav>
+
+    <form action="/success" method="post">
+        <label for="Username">Blog Author</label>
+        <input type="text" id="Username" name="Username">
+        <br>
+        <label for="title">Title of post</label>
+        <input type="text" name="Title" id="Title">
+        <br>
+        <label for="body">Body of Post</label>
+        <textarea name="body" id="body"></textarea>
+        <br>
+        <input type="submit">
+    </form>
+    </div>
+</body>
+</html>
